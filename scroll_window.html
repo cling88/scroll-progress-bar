@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="UTF-8">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스크롤 상태바</title>
+    <link rel="stylesheet" href="./style2.css" />
+</head>
+<body>
+    
+<div class="wrap">
+    <div class="barWrap"><div class="bar"></div></div>
+    <div class="inner">
+        <ul>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam praesentium odit quibusdam ut iure veniam culpa. Sint reprehenderit officiis quos eveniet? Nemo harum debitis voluptatibus aperiam, soluta odio eligendi officia.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam praesentium odit quibusdam ut iure veniam culpa. Sint reprehenderit officiis quos eveniet? Nemo harum debitis voluptatibus aperiam, soluta odio eligendi officia.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam praesentium odit quibusdam ut iure veniam culpa. Sint reprehenderit officiis quos eveniet? Nemo harum debitis voluptatibus aperiam, soluta odio eligendi officia.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam praesentium odit quibusdam ut iure veniam culpa. Sint reprehenderit officiis quos eveniet? Nemo harum debitis voluptatibus aperiam, soluta odio eligendi officia.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam praesentium odit quibusdam ut iure veniam culpa. Sint reprehenderit officiis quos eveniet? Nemo harum debitis voluptatibus aperiam, soluta odio eligendi officia.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam praesentium odit quibusdam ut iure veniam culpa. Sint reprehenderit officiis quos eveniet? Nemo harum debitis voluptatibus aperiam, soluta odio eligendi officia.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam praesentium odit quibusdam ut iure veniam culpa. Sint reprehenderit officiis quos eveniet? Nemo harum debitis voluptatibus aperiam, soluta odio eligendi officia.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam praesentium odit quibusdam ut iure veniam culpa. Sint reprehenderit officiis quos eveniet? Nemo harum debitis voluptatibus aperiam, soluta odio eligendi officia.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam praesentium odit quibusdam ut iure veniam culpa. Sint reprehenderit officiis quos eveniet? Nemo harum debitis voluptatibus aperiam, soluta odio eligendi officia.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam praesentium odit quibusdam ut iure veniam culpa. Sint reprehenderit officiis quos eveniet? Nemo harum debitis voluptatibus aperiam, soluta odio eligendi officia.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam praesentium odit quibusdam ut iure veniam culpa. Sint reprehenderit officiis quos eveniet? Nemo harum debitis voluptatibus aperiam, soluta odio eligendi officia.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam praesentium odit quibusdam ut iure veniam culpa. Sint reprehenderit officiis quos eveniet? Nemo harum debitis voluptatibus aperiam, soluta odio eligendi officia.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam praesentium odit quibusdam ut iure veniam culpa. Sint reprehenderit officiis quos eveniet? Nemo harum debitis voluptatibus aperiam, soluta odio eligendi officia.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam praesentium odit quibusdam ut iure veniam culpa. Sint reprehenderit officiis quos eveniet? Nemo harum debitis voluptatibus aperiam, soluta odio eligendi officia.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam praesentium odit quibusdam ut iure veniam culpa. Sint reprehenderit officiis quos eveniet? Nemo harum debitis voluptatibus aperiam, soluta odio eligendi officia.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam praesentium odit quibusdam ut iure veniam culpa. Sint reprehenderit officiis quos eveniet? Nemo harum debitis voluptatibus aperiam, soluta odio eligendi officia.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam praesentium odit quibusdam ut iure veniam culpa. Sint reprehenderit officiis quos eveniet? Nemo harum debitis voluptatibus aperiam, soluta odio eligendi officia.</li>
+        </ul>
+    </div>
+</div>
+
+
+    <script>
+        
+        let wrap = document.documentElement;
+        let inner = document.querySelector('.inner');
+        let bar = document.querySelector('.bar');
+        window.addEventListener('scroll', function(){
+            let scrollTop = wrap.scrollTop;
+            let scrollHeight = wrap.scrollHeight - wrap.clientHeight;
+            let percentage = (scrollTop/scrollHeight) * 100;
+            bar.style.width = percentage + '%';
+        })
+    </script>
+
+</body>
+</html>
